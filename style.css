@@ -1,0 +1,71 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.slider{
+    width: 100%;
+    width: 100vh;
+    position: absolute;
+    top: 0;
+}
+.img{
+    width: 250%;
+    height: 100vh;
+}
+#slideImg{
+    width: 230%;
+    height: 100%;
+    animation: slide 3s linear infinite;
+}
+@keyframes slide{
+       0%{
+        transform: scale(1.3);
+       }
+       15%{
+        transform: scale(1);
+       }
+       85%{
+        transform: scale(1);
+       }
+       100%{
+        transform: scale(1.3);
+       }
+}
+.overlay{
+    width: 230%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    position: absolute;
+    top: 0;
+}
+.navbar{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    margin: 35px auto;
+    color: #fff;
+}
+.logo{
+    flex-basis: 15%;
+    width: 120px;
+}
+.menu-items{
+    flex: 1;
+    align-items: center;
+    text-align: right;
+}
+.menu-items ul li{
+    text-decoration: none;
+    list-style-type: none;
+    float: right;
+    width: 20px;
+    margin-left: 40px;
+    cursor: pointer;
+}
